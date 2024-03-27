@@ -1,0 +1,5 @@
+botões:#888888
+filtro imagens: #2F2F2F
+fundo 1:#FFFFFF
+fundo2: #F5F5F5
+header e footer: black

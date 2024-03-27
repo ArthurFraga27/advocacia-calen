@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --FontRbt:"Roboto", sans-serif; /*texto longo e nav*/
+    --FontsSerif: "Cormorant Garamond", serif; /*títulos topicos e leituras rápidas */
+    --corimg:#2F2F2F;
+    --corfundo1: white;
+    --corfundo2:#F5F5F5;
+    --headerfooter: black;
+    --corbtn: #888888;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: rgb(22, 22, 22);
+    padding-inline: 15px;
+}
+.nav{
+    max-width: 1280px;
+    height: 90px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo > img{
+    width: 165px;
+    height: 165px;
+    
+}
+.nav-list{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.nav-list a{
+    font-size: 18px;
+    color: #888888;
+    font-family: var(--FontRbt);
+    padding-block: 16px;
+}
+.hero{
+    height: calc(100vh- 70px);
+    background: center / cover no-repeat gray;
+
+}
+.hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+.hamburguer::before,
+.hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+@media (max-width: 750px) {
+    .hamburguer{
+        display: block;
+        z-index: 3;
+    }
+
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(42, 42, 42);
+        clip-path: circle(100px at 98% -30%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    .nav-list a{
+        font-size: 24px;
+        opacity: 0px;
+    }
+
+    .nav-list li:nth-child(1) a{
+        transition: 0.3s 0.1s;
+    }
+    .nav-list li:nth-child(2) a{
+        transition: 0.3s 0.2s;
+    }
+    .nav-list li:nth-child(3) a{
+        transition: 0.3s 0.3s;
+    }
+    .nav-list li:nth-child(4) a{
+        transition: 0.3s 0.4s;
+    }
+    .nav-list li:nth-child(5) a{
+        transition: 0.3s 0.5s;
+    }
+
+    .nav.active .nav-list{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+        z-index: 2;
+    }
+    .nav.active .nav-list a{
+        opacity: 1;
+    }
+
+    .nav.active .hamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+section.img{
+    height: 500px;
+    background-image: url('../assets/predios2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+    filter: grayscale(50%);
+    text-align: center;
+}
+.img > img{
+    width: 400px;
+    height: 400px;
+    filter: contrast(70%);
+    
+}
+
+.container{
+    background-color: rgb(245, 236, 226);
+    display: flex;
+    padding: 70px 0px;
+    flex-wrap: wrap;
+}
+.container img{
+    height: 35px;
+}
+.container > div{
+    font-family: var(--FontsSerif);
+    font-size: 1.1em;
+    padding: 20px 50px;
+    border-right: 1px solid black;
+    flex: 1 1 20px;
+}
+.container > div > p{
+    font-family: var(--FontRbt);
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+.sobre{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.sobre > div{
+    flex-wrap: wrap;
+    padding: 60px;
+}
+div#resum{
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+
+}
+div#resum h1{
+    font-size: 40px;
+    margin-top: 60px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, 0.351);
+}
+div#resum p{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--FontRbt);
+    text-indent: 15px;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.button{
+    border: 1px solid rgba(39, 38, 38, 0.668);
+    background-color: var(--corbtn);
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    
+    width: 150px;
+    height: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.427)
+}
+.button:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.button > a{
+    color: white;
+    font-family: var(--FontRbt);
+    
+    padding: 15px;
+}
+.button > a:hover{
+    color: black;
+    transition: 0.5s;
+}
+.sobre > div > img{
+ width: 320px;
+ box-shadow: 35px 35px 1px rgba(40, 35, 74, 0.133);
+}
+
+.atuacao{
+    background-image: url('../assets/audiencia.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    filter: grayscale(90%);
+
+}
+.titles{
+    font-size: 3.4em;
+    font-family: var(--FontsSerif);
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+}
+.areas{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 150px 0px;
+    flex-wrap: wrap;
+}
+.areas div{
+    border: 1px solid white;
+    padding: 50px;
+    flex-wrap: wrap;
+    font-size: 1.4em;
+    max-width: 100px;
+}
+
+.blog{
+    background-color: white;
+}
+
