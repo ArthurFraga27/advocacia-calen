@@ -143,7 +143,7 @@ a:hover{
 
 section.img{
     height: 500px;
-    background-image: url('../assets/predios2.jpg');
+    background-image: url('../assets/backgrounds/bg-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -245,7 +245,7 @@ div#resum p{
 }
 
 .atuacao{
-    background-image: url('../assets/audiencia.jpg');
+    background-image: url('../assets/backgrounds/bg-2.jpg');
     background-repeat: no-repeat;
     background-position: top right;
     background-attachment: fixed;
