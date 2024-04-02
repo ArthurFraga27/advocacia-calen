@@ -73,7 +73,7 @@ a{
 @media (max-width: 750px) {
     .hamburguer{
         display: block;
-        z-index: 3;
+        z-index: 2;
     }
 
     .nav-list{
@@ -116,7 +116,7 @@ a{
     .nav.active .nav-list{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
-        z-index: 2;
+        z-index: 1;
     }
     .nav.active .nav-list a{
         opacity: 1;
@@ -148,16 +148,17 @@ section.img{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    z-index: 1;
+    z-index: -1;
     filter: grayscale(50%);
     text-align: center;
 }
 .img > img{
-    width: 400px;
+    width: 30%;
     height: 400px;
     filter: contrast(70%);
     
 }
+
 
 .container{
     background-color: rgb(245, 236, 226);
@@ -239,11 +240,18 @@ div#resum p{
     color: black;
     transition: 0.5s;
 }
-.sobre > div > img{
- width: 320px;
- box-shadow: 35px 35px 1px rgba(40, 35, 74, 0.133);
+.retrato{
+ width: 350px;
+ box-shadow: 30px 30px 1px rgba(27, 23, 49, 0.473);
 }
-
+@media (max-width: 750px) {
+    .img > img{
+        width: 100%;
+    }
+    .retrato{
+        width: 100%;
+    }
+}
 .atuacao{
     background-image: url('../assets/backgrounds/bg-2.jpg');
     background-repeat: no-repeat;
