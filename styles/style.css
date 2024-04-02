@@ -262,10 +262,12 @@ div#resum p{
         width: 100%;
     }
     section.img{
-        background-image: url('../assets/backgrounds/bg-1-p.jpg');
+        background-image: linear-gradient(to bottom, rgb(68, 0, 0), rgb(0, 0, 0));
+        filter: none;
     }
     .atuacao{
-        background-image: url('../assets/backgrounds/bg-2-p.jpg');
+        background-image: linear-gradient(to top, rgb(68, 0, 0), rgb(0, 0, 0));
+        filter: none;
     }
 }
 .titles{
