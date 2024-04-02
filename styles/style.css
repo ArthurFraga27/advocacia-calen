@@ -244,14 +244,6 @@ div#resum p{
  width: 350px;
  box-shadow: 30px 30px 1px rgba(27, 23, 49, 0.473);
 }
-@media (max-width: 750px) {
-    .img > img{
-        width: 100%;
-    }
-    .retrato{
-        width: 100%;
-    }
-}
 .atuacao{
     background-image: url('../assets/backgrounds/bg-2.jpg');
     background-repeat: no-repeat;
@@ -260,7 +252,21 @@ div#resum p{
     background-size: cover;
     color: white;
     filter: grayscale(90%);
-
+    
+}
+@media (max-width: 750px) {
+    .img > img{
+        width: 100%;
+    }
+    .retrato{
+        width: 100%;
+    }
+    section.img{
+        background-image: url('../assets/backgrounds/bg-1-p.jpg');
+    }
+    .atuacao{
+        background-image: url('../assets/backgrounds/bg-2-p.jpg');
+    }
 }
 .titles{
     font-size: 3.4em;
