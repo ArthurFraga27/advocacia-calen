@@ -294,3 +294,12 @@ div#resum p{
     background-color: white;
 }
 
+.contato{
+    display: flex;
+    background-color: var(--corimg);
+    color: white;
+    justify-content: center;
+}
+.contato div{
+    padding: 50px;
+}
