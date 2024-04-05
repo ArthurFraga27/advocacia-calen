@@ -14,10 +14,10 @@
             <button class="hamburguer"></button>
             <ul class="nav-list">
                 <li><a href="#">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Áreas de Atuação</a></li>
-                <li><a href="">Artigos e Notícias</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#resum">Sobre</a></li>
+                <li><a href="#atuacao">Áreas de Atuação</a></li>
+                <li><a href="#blog">Artigos e Notícias</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -49,12 +49,12 @@
             <h1>Sobre o Escritório</h1> <br>
             <p>Giovanna e arthur  consectetur adipisicing elit. Autem quos esse necessitatibus obcaecati labore amet impedit nemo quis repellat? Laudantium quod necessitatibus asperiores rerum reiciendis illo ab officiis debitis architecto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum repellat voluptatem numquam in vel, beatae sunt reprehenderit ea illum tenetur libero enim minima unde tempora dolorem repudiandae ipsa similique doloribus? <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde suscipit impedit iure, quidem, praesentium molestias quae repellat doloribus ipsum, similique at sequi eaque voluptatibus. Necessitatibus error in quae fugit?</p>
             
-            <div class="button"><a href="#">Minha História</a></div>
+          
         </div>
         <div><img src="assets/foto-quadro.JPG" alt="Foto Advogado" class="retrato"></div>
     </section>
     
-    <section class="atuacao">
+    <section class="atuacao" id="atuacao">
         <h1 class="titles">Áreas de Atuação</h1>
         <div class="areas">
             <div>Direito Trabalhista</div>
@@ -63,7 +63,7 @@
             <div>Direito do Trânsito</div>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <h1 class="titles">Artigos e Notícias</h1>
         <div class="areas">
             <div>Noticia 1</div>
@@ -72,12 +72,33 @@
             <div>Noticia ... n</div>
         </div>
     </section>
-    <section class="contato">
-        <div>
-            contato wpp
-        </div>
-        <div>
-            formulário
+    <section class="contato" id="contato">
+        
+        <div class="ctt">
+            <div class="redes">
+            <h1>Entre em Contato</h1>
+            <p>Escritório de advocacia especializado em ampla gama de assuntos jurídicos.</p>
+            <p>Atuamos por todo o Pará. Estamos localizados em Ananindeua – PA</p>
+            <h3>Redes Sociais e contatos</h3>
+            <ul class="list">
+                <li><a href="">WhatsApp<img src="assets/icons/wpp.png" alt="WhatsApp" class="icon"></a></li>
+                <li><a href=""><img src="" alt="Telefone" class="icon"></a></li>
+                <li><a href=""><img src="" alt="Instagram" class="icon"></a></li>
+                <li><a href=""><img src="" alt="E-mail" class="icon"></a></li>
+            </ul>
+            </div>
+
+            <div class="formulario">
+                <h1>Mande uma Mensagem:</h1> <br>
+                <form action="https://api.sheetmonkey.io/form/rehEaHkLxGvSHJDY5HuNo5" method="post">
+                    <input type="Text" name="NOME" placeholder="Nome" required>
+                    <input type="Email" name="EMAIL" placeholder="E-mail (OPCIONAL)">
+                    <input type="tel" name="TELEFONE" placeholder="Telefone" required>
+                    <textarea name="CASO" placeholder="Fale um pouco do seu caso" required></textarea> <br>
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></input></div>
+                </form>
+            </div>
+
         </div>
     </section>
 </main>
