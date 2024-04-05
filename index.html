@@ -79,23 +79,25 @@
             <h1>Entre em Contato</h1>
             <p>Escritório de advocacia especializado em ampla gama de assuntos jurídicos.</p>
             <p>Atuamos por todo o Pará. Estamos localizados em Ananindeua – PA</p>
-            <h3>Redes Sociais e contatos</h3>
-            <ul class="list">
-                <li><a href="">WhatsApp<img src="assets/icons/wpp.png" alt="WhatsApp" class="icon"></a></li>
-                <li><a href=""><img src="" alt="Telefone" class="icon"></a></li>
-                <li><a href=""><img src="" alt="Instagram" class="icon"></a></li>
-                <li><a href=""><img src="" alt="E-mail" class="icon"></a></li>
-            </ul>
+            <h2>Redes Sociais</h2>
+                <div>
+                    <ul class="list">
+                        <li><a href=""><img src="assets/icons/wpp.png" alt="WhatsApp" class="icon"></a></li>
+                        <li><a href=""><img src="" alt="Telefone" class="icon"></a></li>
+                        <li><a href=""><img src="" alt="Instagram" class="icon"></a></li>
+                        <li><a href=""><img src="" alt="E-mail" class="icon"></a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="formulario">
                 <h1>Mande uma Mensagem:</h1> <br>
                 <form action="https://api.sheetmonkey.io/form/rehEaHkLxGvSHJDY5HuNo5" method="post">
-                    <input type="Text" name="NOME" placeholder="Nome" required>
+                    <input type="Text" name="NOME" id="nome" placeholder="Nome" required>
                     <input type="Email" name="EMAIL" placeholder="E-mail (OPCIONAL)">
-                    <input type="tel" name="TELEFONE" placeholder="Telefone" required>
-                    <textarea name="CASO" placeholder="Fale um pouco do seu caso" required></textarea> <br>
-                    <div class="btn-enviar"><input type="submit" value="Enviar"></input></div>
+                    <input type="tel" name="TELEFONE" id="telefone" placeholder="Telefone" required>
+                    <textarea name="CASO" id="caso"placeholder="Fale um pouco do seu caso" required></textarea> <br>
+                    <div class="btn-enviar"><input type="submit" value="Enviar" onclick="avisar()"></input></div>
                 </form>
             </div>
 

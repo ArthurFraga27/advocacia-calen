@@ -233,22 +233,7 @@ div#resum p{
     filter: grayscale(90%);
     
 }
-@media (max-width: 750px) {
-    .img > img{
-        width: 100%;
-    }
-    .retrato{
-        width: 100%;
-    }
-    section.img{
-        background-image: linear-gradient(to bottom, rgb(68, 0, 0), rgb(0, 0, 0));
-        filter: none;
-    }
-    .atuacao{
-        background-image: linear-gradient(to top, rgb(68, 0, 0), rgb(0, 0, 0));
-        filter: none;
-    }
-}
+
 .titles{
     font-size: 3.4em;
     font-family: var(--FontsSerif);
@@ -282,39 +267,75 @@ div#resum p{
     background-color: var(--corimg);
     color: white;
 }
-.contato h1{
-    
-}
+
 .ctt{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
-    
+    background-image: url('../assets/backgrounds/bg-3.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+@media (max-width: 750px) {
+    .img > img{
+        width: 100%;
+    }
+    .retrato{
+        width: 100%;
+    }
+    section.img{
+        background-image: linear-gradient(to bottom, rgb(68, 0, 0), rgb(0, 0, 0));
+        filter: none;
+    }
+    .atuacao{
+        background-image: linear-gradient(to top, rgb(68, 0, 0), rgb(0, 0, 0));
+        filter: none;
+    }
+    .ctt{
+        background-image: linear-gradient(to bottom, rgb(68, 0, 0), rgb(0, 0, 0));
+        filter: none;
+    }
 }
 .ctt > div{
-    padding: 150px 15px 150px 15px;
-}
-/*redes*/
-.redes h1{
-    padding: 10px 0px 10px 0px;
-    font-size: 40px;
-    font-weight: 700;
-}
-.redes p{
-
-}
-
-.icon{
-    width: 15px;
-    border-radius: 30%;
-    
+    padding: 80px 15px 80px 15px;
 }
 .ctt div a{
     color: white;
 }
+/*redes*/
+.redes{
+    max-width: 500px;
+}
+.redes h1{
+    padding: 10px 0px 10px 0px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.redes p,li{
+    padding: 13px 0px;
+    font-size: 18px;
+    font-family: var(--FontRbt);
+
+}
+.redes h2{
+    font-family: var(--FontRbt);
+    font-size: 1.6em;
+    text-align: center;
+    padding: 15px 0px;
+}
 .list{
  list-style-type: none;
+}
+.redes li{
+text-align: center;
+}
+.icon{
+    width: 15px;
+    border-radius: 30%;
+    
 }
 
 /*form*/
@@ -349,6 +370,7 @@ form textarea{
     background-color: #888888;
     color: #fff;
     text-align: center;
+    font-size: 1.1em;
     font-weight: bold;
     border-radius: 0;
     border: 1px solid rgba(0, 0, 0, 0.349);
