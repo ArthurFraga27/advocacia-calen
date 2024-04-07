@@ -306,9 +306,7 @@ div#resum p{
     color: white;
 }
 /*redes*/
-.redes{
-   
-}
+
 .redes h1{
     padding: 10px 0px 10px 0px;
     font-size: 40px;
@@ -335,7 +333,6 @@ text-align: center;
 .icon{
     width: 15px;
     border-radius: 30%;
-    
 }
 
 /*form*/
@@ -343,9 +340,19 @@ text-align: center;
 .formulario{
     margin: 0px;
     padding: 30px 0px;
+    width: 450px;
+}
+@media (max-width:750px) {
+    .formulario{
+        min-width: none;
+        padding: 30px 0px;
+    }
+    .ctt > div{
+        padding: 80px 0px;
+    }
 }
 form{
-    max-width: 450px;
+    max-width: 500px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -376,6 +383,7 @@ form textarea{
     border: 1px solid rgba(0, 0, 0, 0.349);
     cursor: pointer;
     text-shadow: 2px 2px 5px#888888;
+    max-width:100px;
 }
 .btn-enviar > input:hover{
     background-color: transparent;
